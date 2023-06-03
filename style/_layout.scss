@@ -1,0 +1,46 @@
+:root {
+  --section-padding-inline: 4%;
+  --section-margin-top: 7.5rem;
+}
+.section {
+  max-width: 90rem;
+  padding-inline: clamp(1rem, var(--section-padding-inline), 2.5rem);
+  margin-top: var(--section-margin-top);
+}
+.flex {
+  display: flex;
+}
+.row {
+  flex-wrap: wrap;
+}
+.column {
+  flex: 1 1 auto;
+}
+.header {
+    max-width: 90rem;
+    padding-inline: 0;
+  }
+.hero {
+  &__image {
+    width: 100%;
+  }
+  &__info {
+    padding-inline: clamp(1rem, var(--section-padding-inline), 2.5rem);
+    & > * {
+      margin-top: 2rem;
+    }
+  }
+}
+.section1{
+
+}
+.section-info{
+    &__text{
+        margin-top: 1.5rem;
+    }
+}
+
+.grid-gallery{
+    display: grid;
+    
+}

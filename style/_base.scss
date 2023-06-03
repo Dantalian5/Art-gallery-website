@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 900;
+  src: url(../assets/fonts/BigShouldersDisplay-Black.ttf);
+  font-display: swap;
+}
+@font-face {
+    font-family: "Big Shoulders Display";
+    font-style: normal;
+    font-weight: 800;
+    src: url(../assets/fonts/BigShouldersDisplay-ExtraBold.ttf);
+    font-display: swap;
+  }
+$font-family-bsd: "Big Shoulders Display", cursive;
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../assets/fonts/Outfit-Light.ttf);
+  font-display: swap;
+}
+$font-family-outfit: "Outfit", sans-serif;
+//colors:
+$c-gold: #d5966c;
+$c-almost-black: #151515;
+$c-dark-grey: #444444;
+$c-white: #ffffff;
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  background: $c-white;
+}
+img,
+svg {
+  max-inline-size: 100%;
+  block-size: auto;
+  width: 100%;
+}

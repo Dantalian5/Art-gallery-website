@@ -1,0 +1,59 @@
+.heading {
+  font-family: $font-family-bsd;
+  font-weight: 900;
+  letter-spacing: 0rem;
+  &--hero {
+    font-size: 3.75rem;
+    line-height: 92%;
+  }
+  &--section {
+    font-size: 3.125rem;
+    line-height: 90%;
+  }
+}
+.paragraph {
+  font-family: $font-family-outfit;
+  font-weight: 300;
+  letter-spacing: 0rem;
+  line-height: 156%;
+  font-size: 1.125rem;
+}
+
+.button {
+  display: block;
+  width: fit-content;
+  font-family: $font-family-bsd;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 120%;
+  letter-spacing: 0.2273rem;
+  color: $c-white;
+  padding-block: 1.5rem;
+  padding-inline: 2rem 2.1875rem;
+  background: $c-almost-black;
+  position: relative;
+  &::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 3.5rem;
+    height: 100%;
+    top: 0;
+    background: $c-gold;
+  }
+  &--rigth {
+    margin-right: 3.5rem;
+    &::after {
+      content: url(../assets/icon-arrow-right.svg);
+      left: 100%;
+    }
+  }
+  &--left {
+    margin-left: 3.5rem;
+    &::after {
+      content: url(../assets/icon-arrow-left.svg);
+      right: 100%;
+    }
+  }
+}
