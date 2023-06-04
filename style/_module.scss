@@ -2,13 +2,14 @@
   font-family: $font-family-bsd;
   font-weight: 900;
   letter-spacing: 0rem;
+  text-transform: uppercase;
   &--hero {
     font-size: 3.75rem;
-    line-height: 92%;
+    line-height: .92;
   }
   &--section {
     font-size: 3.125rem;
-    line-height: 90%;
+    line-height: .90;
   }
 }
 .paragraph {
@@ -17,6 +18,10 @@
   letter-spacing: 0rem;
   line-height: 156%;
   font-size: 1.125rem;
+  &--footer {
+    font-size: 1rem;
+    line-height: 1.62;
+  }
 }
 
 .button {
