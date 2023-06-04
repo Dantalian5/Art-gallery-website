@@ -1,0 +1,82 @@
+:root {
+  --section-padding-inline: 4%;
+  --section-margin-top: 7.5rem;
+}
+.section {
+  max-width: 90rem;
+  padding-inline: clamp(1rem, var(--section-padding-inline), 2.5rem);
+  margin-top: var(--section-margin-top);
+}
+.flex {
+  display: flex;
+}
+.row {
+  flex-wrap: wrap;
+}
+.column {
+  flex: 1 1 auto;
+}
+.header {
+  max-width: 90rem;
+  padding-inline: 0;
+}
+.hero {
+  &__image {
+    width: 100%;
+  }
+  &__info {
+    padding-inline: clamp(1rem, var(--section-padding-inline), 2.5rem);
+    color: $c-almost-black;
+    & > * {
+      margin-top: 2rem;
+    }
+  }
+}
+.section-1 {
+  &__img-1 {
+  }
+  &__img-2 {
+    margin-top: 2rem;
+  }
+  &__img-3 {
+    margin-top: 1rem;
+  }
+  &__info-1 {
+    margin-top: 1.5625rem;
+    color: $c-almost-black;
+  }
+  &__info-2 {
+    margin-top: 1rem;
+    padding: 3rem 1.5rem;
+    background: $c-almost-black;
+    color: $c-white;
+  }
+}
+.section-info {
+  &__text {
+    margin-top: 1.5rem;
+  }
+}
+
+.footer{
+    background: $c-almost-black;
+    color: $c-white;
+    &__wrapper{
+        padding: 3rem 1rem;
+    }
+    &__logo{
+        width: 6.9375rem;
+    }
+    &__text{
+        margin-block: 2.375rem;
+    }
+    &__social{
+        align-items: center;
+        gap: 1.25rem;
+    }
+}
+
+/* .grid-gallery{
+    display: grid;
+
+} */
