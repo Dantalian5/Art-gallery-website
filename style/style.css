@@ -157,6 +157,14 @@ svg {
   margin-top: 2rem;
 }
 
+.section-1__row-1 {
+  align-items: center;
+  gap: 1.5625rem 4.25rem;
+  flex-direction: row-reverse;
+}
+.section-1__img-1 {
+  flex-basis: 350px;
+}
 .section-1__img-2 {
   margin-top: 2rem;
 }
@@ -164,7 +172,7 @@ svg {
   margin-top: 1rem;
 }
 .section-1__info-1 {
-  margin-top: 1.5625rem;
+  flex-basis: 180px;
   color: #151515;
 }
 .section-1__info-2 {
@@ -184,22 +192,25 @@ svg {
 }
 .footer__wrapper {
   padding: 3rem 1rem;
+  align-items: start;
+  gap: 2.375rem 4.0625rem;
 }
 .footer__logo {
   width: 6.9375rem;
+  flex: 0 0 auto;
 }
 .footer__text {
-  margin-block: 2.375rem;
+  flex-basis: 17.5rem;
+  margin-right: auto;
 }
 .footer__social {
+  flex: 0 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
   align-items: center;
   gap: 1.25rem;
 }
 
-/* .grid-gallery{
-    display: grid;
-
-} */
 .heading {
   font-family: "Big Shoulders Display", cursive;
   font-weight: 900;
@@ -273,5 +284,13 @@ svg {
   }
   .button:hover::after {
     background: #151515;
+  }
+}
+@media (min-width: 37.5rem) {
+  :root {
+    --section-padding-inline: 5.2%;
+  }
+  .footer__text {
+    max-width: 38%;
   }
 }/*# sourceMappingURL=style.css.map */
