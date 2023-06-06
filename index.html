@@ -14,6 +14,7 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="style/rsc/reset.min.css" type="text/css" />
     <link rel="stylesheet" href="style/style.css" type="text/css" />
   </head>
   <body>
@@ -55,8 +56,16 @@
     </header>
     <main class="section section-1" aria-label="section one">
       <div class="section-1__row-1 flex row">
-        <div class="section-1__img-1 column">
+        <div class="section-1__column-image column">
           <picture>
+            <source
+              media="(min-width: 37.5rem)"
+              srcset="
+                assets/tablet/image-grid-1.jpg    1x,
+                assets/tablet/image-grid-1@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
             <img
               src="assets/mobile/image-grid-1.jpg"
               alt="an art saloon"
@@ -85,44 +94,63 @@
           </div>
         </div>
       </div>
-
-      <div class="section-1__img-2">
-        <picture>
-          <img
-            src="assets/mobile/image-grid-2.jpg"
-            alt=" a picture exposition"
-            width="343"
-            height="480"
-            srcset="
-              assets/mobile/image-grid-2.jpg    1x,
-              assets/mobile/image-grid-2@2x.jpg 2x
-            "
-          />
-        </picture>
-      </div>
-      <div class="section-1__img-3">
-        <picture>
-          <img
-            src="assets/mobile/image-grid-3.jpg"
-            alt="people looking art"
-            width="343"
-            height="200"
-            srcset="
-              assets/mobile/image-grid-3.jpg    1x,
-              assets/mobile/image-grid-3@2x.jpg 2x
-            "
-          />
-        </picture>
-      </div>
-      <div class="section-1__info-2 section-info">
-        <div class="section-info__title">
-          <h2 class="heading heading--section">Come &amp; be inspired</h2>
+      <div class="section-1__row-2 flex row">
+        <div class="section-1__column-image column">
+          <picture>
+            <source
+              media="(min-width: 37.5rem)"
+              srcset="
+                assets/tablet/image-grid-2.jpg    1x,
+                assets/tablet/image-grid-2@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              src="assets/mobile/image-grid-2.jpg"
+              alt=" a picture exposition"
+              width="343"
+              height="480"
+              srcset="
+                assets/mobile/image-grid-2.jpg    1x,
+                assets/mobile/image-grid-2@2x.jpg 2x
+              "
+            />
+          </picture>
         </div>
-        <div class="section-info__text">
-          <p class="paragraph">
-            We’re excited to welcome you to our gallery and see how our
-            collections influence you.
-          </p>
+        <div class="section-1__row-3 column flex">
+          <div class="section-1__img-3">
+            <picture>
+              <source
+              media="(min-width: 37.5rem)"
+              srcset="
+                assets/tablet/image-grid-3.jpg    1x,
+                assets/tablet/image-grid-3@2x.jpg 2x
+              "
+              type="image/jpg"
+            />
+              <img
+                src="assets/mobile/image-grid-3.jpg"
+                alt="people looking art"
+                width="343"
+                height="200"
+                srcset="
+                  assets/mobile/image-grid-3.jpg    1x,
+                  assets/mobile/image-grid-3@2x.jpg 2x
+                "
+              />
+            </picture>
+          </div>
+          <div class="section-1__info-2 flex section-info">
+            <div class="section-info__title">
+              <h2 class="heading heading--section">Come &amp; be inspired</h2>
+            </div>
+            <div class="section-info__text">
+              <p class="paragraph">
+                We’re excited to welcome you to our gallery and see how our
+                collections influence you.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </main>

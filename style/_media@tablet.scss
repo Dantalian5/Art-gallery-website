@@ -2,7 +2,20 @@
   :root {
     --section-padding-inline: 5.2%;
   }
+  .section-1 {
+    &__row-1,
+    &__row-2,
+    &__row-3 {
+      gap: 0.6875rem;
+    }
+    &__info-1{
+        padding-right: 6%;
+    }
+  }
   .footer {
+    &__wrapper {
+      padding: 3.5rem 0rem;
+    }
     &__text {
       max-width: 38%;
     }

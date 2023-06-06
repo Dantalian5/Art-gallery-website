@@ -35,27 +35,36 @@
 .section-1 {
   &__row-1 {
     align-items: center;
-    gap: 1.5625rem 4.25rem;
     flex-direction: row-reverse;
   }
-  &__img-1 {
-    flex-basis: 350px;
-  }
-  &__img-2 {
-    margin-top: 2rem;
-  }
-  &__img-3 {
+  &__row-2 {
+    align-items: stretch;
     margin-top: 1rem;
+  }
+  &__row-3 {
+    flex-basis: 12.5rem;
+    flex-direction: column;
+  }
+  &__row-1,
+  &__row-2,
+  &__row-3{
+    gap: 1rem;
+  }
+  &__column-image {
+    flex-basis: 20rem;
   }
   &__info-1 {
-    flex-basis: 180px;
+    flex-basis: 12.5rem;
     color: $c-almost-black;
+    margin-block: .5625rem 1rem;
   }
   &__info-2 {
-    margin-top: 1rem;
     padding: 3rem 1.5rem;
+    flex-direction: column;
+    justify-content: center;
     background: $c-almost-black;
     color: $c-white;
+    flex-grow: 1;
   }
 }
 .section-info {
