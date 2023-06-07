@@ -4,7 +4,7 @@
 }
 .section {
   max-width: 90rem;
-  padding-inline: clamp(1rem, var(--section-padding-inline), 2.5rem);
+  padding-inline: clamp(1rem, var(--section-padding-inline), 10.3125rem);
   margin-top: var(--section-margin-top);
 }
 .flex {
@@ -21,15 +21,21 @@
   padding-inline: 0;
 }
 .hero {
+    align-items: center;
+    gap: 2rem 0;
+    position: relative;
   &__image {
     width: 100%;
+    flex-basis: 350px;
   }
   &__info {
-    padding-inline: clamp(1rem, var(--section-padding-inline), 2.5rem);
+    position: relative;
+    flex-basis: 250px;
+    padding-inline: clamp(1rem, var(--section-padding-inline), 10.3125rem);
     color: $c-almost-black;
-    & > * {
-      margin-top: 2rem;
-    }
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 }
 .section-1 {

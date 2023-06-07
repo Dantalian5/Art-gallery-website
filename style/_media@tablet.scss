@@ -2,6 +2,13 @@
   :root {
     --section-padding-inline: 5.2%;
   }
+  .hero {
+  &__info {
+    padding: 0;
+    gap: 3rem;
+    right: var(--section-padding-inline);
+  }
+}
   .section-1 {
     &__row-1,
     &__row-2,
@@ -18,6 +25,13 @@
     }
     &__text {
       max-width: 38%;
+    }
+  }
+//---------------
+.heading {
+    &--hero {
+      font-size: 4.375rem;
+      line-height: .92;
     }
   }
 }
