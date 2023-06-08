@@ -19,8 +19,8 @@
   </head>
   <body>
     <header class="header" aria-label="header">
-      <div class="hero flex row">
-        <div class="hero__image column">
+      <div class="hero flex">
+        <div class="hero__image">
           <div class="hero__image__img">
             <picture>
               <source
@@ -44,29 +44,33 @@
             </picture>
           </div>          
         </div>
-        <div class="hero__info column flex row">
-          <div class="hero__info__title">
-            <h1 class="heading heading--hero">
-              Modern <br />
-              Art Gallery
-            </h1>
-          </div>
-          <div class="hero__info__text">
-            <p class="paragraph">
-              The arts in the collection of the Modern Art Gallery all started
-              from a spark of inspiration. Will these pieces inspire you? Visit
-              us and find out.
-            </p>
-          </div>
-          <div class="hero__info__cta">
-            <a class="button button--rigth" href="#">Our location</a>
-          </div>
+        <div class="hero__info">
+          <div class="hero__info__wrapper flex row">
+            <div class="hero__info__title">
+              <h1 class="heading heading--hero">
+                Modern <br />
+                Art Gallery
+              </h1>
+            </div>
+            <div class="hero__info__subwrapper flex">
+              <div class="hero__info__text">
+                <p class="paragraph">
+                  The arts in the collection of the Modern Art Gallery all started
+                  from a spark of inspiration. Will these pieces inspire you? Visit
+                  us and find out.
+                </p>
+              </div>
+              <div class="hero__info__cta">
+                <a class="button button--rigth" href="#">Our location</a>
+              </div>
+            </div>            
+          </div>          
         </div>
       </div>
     </header>
     <main class="section section-1" aria-label="section one">
       <div class="section-1__row-1 flex row">
-        <div class="section-1__column-image column">
+        <div class="section-1__column-big column">
           <picture>
             <source
               media="(min-width: 37.5rem)"
@@ -88,7 +92,7 @@
             />
           </picture>
         </div>
-        <div class="section-1__info-1 column section-info">
+        <div class="section-1__info-1 section-1__column-small column section-info">
           <div class="section-info__title">
             <h2 class="heading heading--section">
               Your day <br />
@@ -105,7 +109,7 @@
         </div>
       </div>
       <div class="section-1__row-2 flex row">
-        <div class="section-1__column-image column">
+        <div class="section-1__column-big column">
           <picture>
             <source
               media="(min-width: 37.5rem)"
@@ -127,7 +131,7 @@
             />
           </picture>
         </div>
-        <div class="section-1__row-3 column flex">
+        <div class="section-1__row-3 section-1__column-small column flex">
           <div class="section-1__img-3">
             <picture>
               <source

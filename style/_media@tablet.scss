@@ -3,20 +3,36 @@
     --section-padding-inline: 5.2%;
   }
   .hero {
-  &__info {
-    padding: 0;
-    gap: 3rem;
-    right: var(--section-padding-inline);
+    flex-direction: row;
+    &__info {
+      width: 68%;
+      &__wrapper{
+        position: absolute;
+        width: 55%;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+        gap: 3rem;
+      }
+      &__subwrapper {
+        gap: 3rem;
+      }
+    }
   }
-}
   .section-1 {
     &__row-1,
     &__row-2,
     &__row-3 {
       gap: 0.6875rem;
     }
-    &__info-1{
-        padding-right: 6%;
+    &__row-2 {
+      margin-top: 0.6875rem;
+    }
+    &__column-small {
+      max-width: 27.8125rem;
+    }
+    &__info-1 {
+      padding-right: 8%;
     }
   }
   .footer {
@@ -27,11 +43,10 @@
       max-width: 38%;
     }
   }
-//---------------
-.heading {
+  //---------------
+  .heading {
     &--hero {
       font-size: 4.375rem;
-      line-height: .92;
     }
   }
 }
