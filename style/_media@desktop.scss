@@ -4,10 +4,46 @@
     --section-margin-top: 11.25rem;
   }
   .hero {
+    &::before {
+      content: "";
+      flex: 1 1 0;
+      align-self: stretch;
+      background-color: $c-almost-black;
+    }
+    &__image {
+      max-width: 33.75rem;
+    }
+    &__info {
+      max-width: 28.125rem;
+      &__wrapper {
+        width: 100%;
+        top: 11.875rem;
+        transform: translate(0, 0);
+        flex-direction: row;
+      }
+      &__subwrapper {
+        gap: 4rem;
+        max-width: 21.875rem;
+      }
+    }
   }
   .section-1 {
+    &__row-1,
+    &__row-2,
+    &__row-3 {
+      gap: 1.875rem;
+    }
+    &__row-2 {
+      margin-top: 1.875rem;
+    }
     &__info-2 {
       padding-inline: 3rem;
+    }
+  }
+  .footer {
+    &__wrapper {
+      padding: 5rem 0rem;
+      column-gap: 8.75rem;
     }
   }
   //---------------

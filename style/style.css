@@ -109,6 +109,7 @@ svg {
   color: #151515;
 }
 .hero__info__wrapper {
+  flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
@@ -179,6 +180,9 @@ svg {
   width: fit-content;
   align-items: center;
   gap: 1.25rem;
+}
+.footer__social__item {
+  color: #ffffff;
 }
 
 .heading {
@@ -255,6 +259,9 @@ svg {
   .button:hover::after {
     background: #151515;
   }
+  .footer__social__item:hover {
+    color: #d5966c;
+  }
 }
 @media (min-width: 37.5rem) {
   :root {
@@ -304,8 +311,41 @@ svg {
     --section-padding-inline: 11.5%;
     --section-margin-top: 11.25rem;
   }
+  .hero::before {
+    content: "";
+    flex: 1 1 0;
+    align-self: stretch;
+    background-color: #151515;
+  }
+  .hero__image {
+    max-width: 33.75rem;
+  }
+  .hero__info {
+    max-width: 28.125rem;
+  }
+  .hero__info__wrapper {
+    width: 100%;
+    top: 11.875rem;
+    transform: translate(0, 0);
+    flex-direction: row;
+  }
+  .hero__info__subwrapper {
+    gap: 4rem;
+    max-width: 21.875rem;
+  }
+  .section-1__row-1, .section-1__row-2, .section-1__row-3 {
+    gap: 1.875rem;
+  }
+  .section-1__row-2 {
+    margin-top: 1.875rem;
+  }
   .section-1__info-2 {
     padding-inline: 3rem;
+  }
+  .footer__wrapper {
+    padding: 5rem 0rem;
+    -moz-column-gap: 8.75rem;
+         column-gap: 8.75rem;
   }
   .heading--hero {
     font-size: 6rem;
