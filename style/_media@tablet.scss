@@ -4,18 +4,14 @@
   }
   .hero {
     flex-direction: row;
-
-    &__image {
-      
-    }
     &__info {
       width: 68%;
       &__wrapper {
         position: absolute;
         width: 55%;
-        top: 50%;
+        height: 100%;
         right: 0;
-        transform: translate(0, -50%);
+        top: 0;
         gap: 3rem;
       }
       &__subwrapper {

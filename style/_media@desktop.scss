@@ -1,4 +1,4 @@
-@media (min-width: 62.5rem) {
+@media (min-width: 75rem) {
   :root {
     --section-padding-inline: 11.5%;
     --section-margin-top: 11.25rem;
@@ -8,17 +8,24 @@
       content: "";
       flex: 1 1 0;
       align-self: stretch;
-      background-color: $c-almost-black;
+      background: $c-almost-black;
     }
     &__image {
       max-width: 33.75rem;
     }
     &__info {
       max-width: 28.125rem;
+      &__title {
+        margin-right: auto;
+        & h1{    
+            color: $c-white;
+            mix-blend-mode: difference;
+        }
+        
+      }
       &__wrapper {
+        margin-top: min(24%, 11.875rem);
         width: 100%;
-        top: 11.875rem;
-        transform: translate(0, 0);
         flex-direction: row;
       }
       &__subwrapper {
