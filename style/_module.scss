@@ -11,6 +11,12 @@
     font-size: 3.125rem;
     line-height: .90;
   }
+  &--dark{
+    color: $c-almost-black;
+  }
+  &--light{
+    color: $c-white;
+  }
 }
 .paragraph {
   font-family: $font-family-outfit;
@@ -21,6 +27,15 @@
   &--footer {
     font-size: 1rem;
     line-height: 1.62;
+  }
+  &--dark{
+    color: $c-almost-black;
+  }
+  &--grey{
+    color: $c-dark-grey;
+  }
+  &--light{
+    color: $c-white;
   }
 }
 

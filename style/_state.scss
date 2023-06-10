@@ -5,7 +5,10 @@
       background: $c-almost-black;
     }
   }
-  .footer__social__item:hover{
+  .section--dark .footer__social__item:hover{
     color: $c-gold;
+  }
+  .section--orange .footer__social__item:hover{
+    color: $c-white;
   }
 }
