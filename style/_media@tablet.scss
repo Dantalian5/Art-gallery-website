@@ -44,7 +44,7 @@
     &__cta {
       position: absolute;
       top: 0;
-      left: var(--section-padding-inline);
+      left: clamp(1rem, var(--section-padding-value), 10.3125rem);
       z-index: 2;
     }
   }

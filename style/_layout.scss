@@ -1,10 +1,5 @@
 :root {
   --section-padding-value: 4%;
-  --section-padding-inline: clamp(
-    1rem,
-    var(--section-padding-value),
-    10.3125rem
-  );
   --section-margin-top: 7.5rem;
 }
 .flex {
@@ -20,7 +15,7 @@
   margin-inline: auto;
   max-width: 90rem;
   &:not(.header) {
-    padding-inline: var(--section-padding-inline);
+    padding-inline: clamp(1rem, var(--section-padding-value), 10.3125rem);
   }
   &--top-margin {
     margin-top: var(--section-margin-top);
@@ -41,7 +36,7 @@
       align-items: flex-start;
       justify-content: center;
       gap: 2rem;
-      padding-inline: var(--section-padding-inline);
+      padding-inline: clamp(1rem, var(--section-padding-value), 10.3125rem);
     }
     &__subwrapper {
       flex-direction: column;

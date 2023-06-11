@@ -71,11 +71,6 @@ svg {
 
 :root {
   --section-padding-value: 4%;
-  --section-padding-inline: clamp(
-    1rem,
-    var(--section-padding-value),
-    10.3125rem
-  );
   --section-margin-top: 7.5rem;
 }
 
@@ -96,7 +91,7 @@ svg {
   max-width: 90rem;
 }
 .section:not(.header) {
-  padding-inline: var(--section-padding-inline);
+  padding-inline: clamp(1rem, var(--section-padding-value), 10.3125rem);
 }
 .section--top-margin {
   margin-top: var(--section-margin-top);
@@ -116,7 +111,7 @@ svg {
   align-items: flex-start;
   justify-content: center;
   gap: 2rem;
-  padding-inline: var(--section-padding-inline);
+  padding-inline: clamp(1rem, var(--section-padding-value), 10.3125rem);
 }
 .hero__info__subwrapper {
   flex-direction: column;
@@ -366,7 +361,7 @@ svg {
   .section-map__cta {
     position: absolute;
     top: 0;
-    left: var(--section-padding-inline);
+    left: clamp(1rem, var(--section-padding-value), 10.3125rem);
     z-index: 2;
   }
   .footer__wrapper {
