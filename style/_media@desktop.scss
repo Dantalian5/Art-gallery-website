@@ -1,0 +1,74 @@
+@media (min-width: 75rem) {
+  :root {
+    --section-padding-value: 11.5%;
+    --section-margin-top: 11.25rem;
+  }
+  .hero {
+    &::before {
+      content: "";
+      flex: 1 1 0;
+      align-self: stretch;
+      background: $c-almost-black;
+    }
+    &__image {
+      max-width: 33.75rem;
+    }
+    &__info {
+      max-width: 28.125rem;
+      &__title {
+        margin-right: auto;
+        & h1 {
+          color: $c-white;
+          mix-blend-mode: difference;
+        }
+      }
+      &__wrapper {
+        margin-top: min(24%, 11.875rem);
+        width: 100%;
+        flex-direction: row;
+      }
+      &__subwrapper {
+        gap: 4rem;
+        max-width: 21.875rem;
+      }
+    }
+  }
+  .section-grid {
+    gap: 1.875rem;
+  }
+  .section-info {
+    gap: 2rem;
+    &--small {
+      padding-inline: 3rem;
+    }
+  }
+  .footer {
+    &__wrapper {
+      padding: 5rem 0rem;
+      column-gap: 8.75rem;
+    }
+  }
+  //---------------
+  .h {
+    &-hero-title {
+      font-size: 6rem;
+    }
+    &-section-title {
+      font-size: 3.75rem;
+      line-height: 1;
+    }
+    &-subsection-title {
+      font-size: 2.25rem;
+    }
+  }
+  .p {
+    &-section {
+      line-height: 1.45;
+      font-size: 1.375rem;
+    }
+    &--footer {
+      font-size: 1.125rem;
+      line-height: 1.56;
+    }
+  }
+}

@@ -1,8 +1,16 @@
 @media (hover: hover) {
   .button:hover {
-    background: $c-gold;
+    background-size: 100% 100%;
+    transition: background-size 0.5s 0.3s;
     &::after {
-      background: $c-almost-black;
+      background-size: 100% 100%;
+      transition: background-size 0.3s ;
     }
+  }
+  .color--light .footer__social__item:hover {
+    color: $c-gold;
+  }
+  .color--dark .footer__social__item:hover {
+    color: $c-white;
   }
 }

@@ -1,42 +1,19 @@
-.heading {
-  font-family: $font-family-bsd;
-  font-weight: 900;
-  letter-spacing: 0rem;
-  text-transform: uppercase;
-  &--hero {
-    font-size: 3.75rem;
-    line-height: .92;
-  }
-  &--section {
-    font-size: 3.125rem;
-    line-height: .90;
-  }
-}
-.paragraph {
-  font-family: $font-family-outfit;
-  font-weight: 300;
-  letter-spacing: 0rem;
-  line-height: 156%;
-  font-size: 1.125rem;
-  &--footer {
-    font-size: 1rem;
-    line-height: 1.62;
-  }
-}
-
 .button {
   display: block;
   width: fit-content;
   font-family: $font-family-bsd;
   font-weight: 800;
   font-size: 1.25rem;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.2273rem;
   color: $c-white;
   padding-block: 1.5rem;
   padding-inline: 2rem 2.1875rem;
-  background: $c-almost-black;
   position: relative;
+  background: no-repeat linear-gradient(0deg, $c-gold 0%, $c-gold 100%),
+    $c-almost-black;
+  background-size: 0% 100%;
+  transition: background-size 0.7s;
   &::after {
     display: flex;
     align-items: center;
@@ -45,13 +22,17 @@
     width: 3.5rem;
     height: 100%;
     top: 0;
-    background: $c-gold;
+    background: no-repeat
+        linear-gradient(0deg, $c-almost-black 0%, $c-almost-black 100%),
+      $c-gold;
+    transition: background-size 0.5s 0.7s;
   }
   &--rigth {
     margin-right: 3.5rem;
     &::after {
       content: url(../assets/icon-arrow-right.svg);
       left: 100%;
+      background-size: 0% 100%;
     }
   }
   &--left {
@@ -59,6 +40,72 @@
     &::after {
       content: url(../assets/icon-arrow-left.svg);
       right: 100%;
+      background-size: 0% 100%;
     }
+  }
+}
+
+//----------------------------
+.h {
+  &-hero-title,
+  &-section-title,
+  &-subsection-title {
+    font-family: $font-family-bsd;
+    font-weight: 900;
+    letter-spacing: 0rem;
+    text-transform: uppercase;
+  }
+  &-hero-title {
+    font-size: 3.75rem;
+    line-height: 0.92;
+  }
+  &-section-title {
+    font-size: 3.125rem;
+    line-height: 0.9;
+  }
+  &-subsection-title {
+    font-size: 2rem;
+    line-height: 1;
+  }
+}
+.p {
+  &-section,
+  &-footer {
+    font-family: $font-family-outfit;
+    font-weight: 300;
+    letter-spacing: 0rem;
+  }
+  &-section {
+    line-height: 1.56;
+    font-size: 1.125rem;
+  }
+  &-footer {
+    font-size: 1rem;
+    line-height: 1.62;
+  }
+}
+.color {
+  &--light {
+    color: $c-white;
+  }
+  &--gold {
+    color: $c-gold;
+  }
+  &--grey {
+    color: $c-dark-grey;
+  }
+  &--dark {
+    color: $c-almost-black;
+  }
+}
+.bg {
+  &--light {
+    background-color: $c-white;
+  }
+  &--gold {
+    background-color: $c-gold;
+  }
+  &--dark {
+    background-color: $c-almost-black;
   }
 }
