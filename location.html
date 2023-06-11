@@ -34,12 +34,27 @@
       <div id="map"></div>
     </section>
     <main class="section section--dark section-3">
-      <div class="section-info-1"></div>
+      <div class="section-info-1 flex row">
+        <div class="section-info-1__title column">
+          <h1 class="heading heading--section heading--light">Our location</h1>
+        </div>
+        <div class="section-info-1__adress column flex">
+          <h2 class="heading heading--subsection heading--gold">
+            99 King Street
+          </h2>
+          <p class="paragraph paragraph--light">
+            Newport <br />
+            RI 02840 <br />
+            United States of America
+          </p>
+          <p class="paragraph paragraph--light">
+            Our newly opened gallery is located near the Edward King House on 99
+            King Street, the Modern Art Gallery is free to all visitors and open
+            seven days a week from 8am to 9pm.
+          </p>
+        </div>
+      </div>
     </main>
-    Our location 99 King Street Newport RI 02840 United States of America Our
-    newly opened gallery is located near the Edward King House on 99 King
-    Street, the Modern Art Gallery is free to all visitors and open seven days a
-    week from 8am to 9pm.
 
     <footer class="footer section section--orange">
       <div class="footer__wrapper flex row">
@@ -91,12 +106,12 @@
       crossorigin=""
     ></script>
     <script>
-      var map = L.map("map",{
-        center: [41.48041, -71.31098], 
+      var map = L.map("map", {
+        center: [41.48041, -71.31098],
         zoom: 15,
         scrollWheelZoom: false,
         zoomControl: false,
-      }); 
+      });
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 20,
         attribution:
@@ -109,7 +124,7 @@
         //popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
       });
       var marker = L.marker([41.48041, -71.31098], { icon: myIcon }).addTo(map);
-      L.control.zoom({ position: 'bottomleft' }).addTo(map);
+      L.control.zoom({ position: "bottomleft" }).addTo(map);
     </script>
   </body>
 </html>

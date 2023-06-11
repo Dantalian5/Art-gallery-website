@@ -200,6 +200,23 @@ svg {
   z-index: 1;
 }
 
+.section-3 {
+  padding-block: 3rem 3.5rem;
+}
+
+.section-info-1 {
+  align-items: flex-start;
+  gap: 3rem;
+}
+.section-info-1__title {
+  flex-basis: 200px;
+}
+.section-info-1__adress {
+  flex-basis: 300px;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .heading {
   font-family: "Big Shoulders Display", cursive;
   font-weight: 900;
@@ -214,11 +231,18 @@ svg {
   font-size: 3.125rem;
   line-height: 0.9;
 }
+.heading--subsection {
+  font-size: 2rem;
+  line-height: 1;
+}
 .heading--dark {
   color: #151515;
 }
 .heading--light {
   color: #ffffff;
+}
+.heading--gold {
+  color: #d5966c;
 }
 
 .paragraph {

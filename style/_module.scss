@@ -5,17 +5,24 @@
   text-transform: uppercase;
   &--hero {
     font-size: 3.75rem;
-    line-height: .92;
+    line-height: 0.92;
   }
   &--section {
     font-size: 3.125rem;
-    line-height: .90;
+    line-height: 0.9;
   }
-  &--dark{
+  &--subsection {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  &--dark {
     color: $c-almost-black;
   }
-  &--light{
+  &--light {
     color: $c-white;
+  }
+  &--gold {
+    color: $c-gold;
   }
 }
 .paragraph {
@@ -28,13 +35,13 @@
     font-size: 1rem;
     line-height: 1.62;
   }
-  &--dark{
+  &--dark {
     color: $c-almost-black;
   }
-  &--grey{
+  &--grey {
     color: $c-dark-grey;
   }
-  &--light{
+  &--light {
     color: $c-white;
   }
 }
@@ -77,3 +84,5 @@
     }
   }
 }
+
+//----------------------------
