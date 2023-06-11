@@ -17,7 +17,7 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style/rsc/reset.min.css" type="text/css" />
+    <link rel="stylesheet" href="style/rsc/reset.min.css" />
     <link rel="stylesheet" href="style/style.css" type="text/css" />
     <link
       rel="stylesheet"
@@ -29,7 +29,7 @@
   <body>
     <header class="header section section-map">
       <div class="section-map__cta">
-        <a class="button button--left" href="/index.html">Back to Home</a>
+        <a class="button button--left" href="index.html">Back to Home</a>
       </div>
       <div id="map"></div>
     </header>
@@ -126,7 +126,9 @@
         popupAnchor: [0, -70], // point from which the popup should open relative to the iconAnchor
       });
       var marker = L.marker([41.48041, -71.31098], { icon: myIcon }).addTo(map);
-      marker.bindPopup("<b>Modern Art Gallery</b> <br>is right here.").openPopup();
+      marker
+        .bindPopup("<b>Modern Art Gallery</b> <br>is right here.")
+        .openPopup();
       L.control.zoom({ position: "bottomleft" }).addTo(map);
     </script>
   </body>
