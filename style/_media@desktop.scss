@@ -17,11 +17,10 @@
       max-width: 28.125rem;
       &__title {
         margin-right: auto;
-        & h1{    
-            color: $c-white;
-            mix-blend-mode: difference;
+        & h1 {
+          color: $c-white;
+          mix-blend-mode: difference;
         }
-        
       }
       &__wrapper {
         margin-top: min(24%, 11.875rem);
@@ -34,16 +33,12 @@
       }
     }
   }
-  .section-1 {
-    &__row-1,
-    &__row-2,
-    &__row-3 {
-      gap: 1.875rem;
-    }
-    &__row-2 {
-      margin-top: 1.875rem;
-    }
-    &__info-2 {
+  .section-grid {
+    gap: 1.875rem;
+  }
+  .section-info {
+    gap: 2rem;
+    &--small {
       padding-inline: 3rem;
     }
   }
@@ -54,18 +49,20 @@
     }
   }
   //---------------
-  .heading {
-    &--hero {
+  .h {
+    &-hero-title {
       font-size: 6rem;
     }
-    &--section {
+    &-section-title {
       font-size: 3.75rem;
       line-height: 1;
     }
   }
-  .paragraph {
-    line-height: 1.45;
-    font-size: 1.375rem;
+  .p {
+    &-section {
+      line-height: 1.45;
+      font-size: 1.375rem;
+    }
     &--footer {
       font-size: 1.125rem;
       line-height: 1.56;

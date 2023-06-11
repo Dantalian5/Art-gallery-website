@@ -1,51 +1,3 @@
-.heading {
-  font-family: $font-family-bsd;
-  font-weight: 900;
-  letter-spacing: 0rem;
-  text-transform: uppercase;
-  &--hero {
-    font-size: 3.75rem;
-    line-height: 0.92;
-  }
-  &--section {
-    font-size: 3.125rem;
-    line-height: 0.9;
-  }
-  &--subsection {
-    font-size: 2rem;
-    line-height: 1;
-  }
-  &--dark {
-    color: $c-almost-black;
-  }
-  &--light {
-    color: $c-white;
-  }
-  &--gold {
-    color: $c-gold;
-  }
-}
-.paragraph {
-  font-family: $font-family-outfit;
-  font-weight: 300;
-  letter-spacing: 0rem;
-  line-height: 1.56;
-  font-size: 1.125rem;
-  &--footer {
-    font-size: 1rem;
-    line-height: 1.62;
-  }
-  &--dark {
-    color: $c-almost-black;
-  }
-  &--grey {
-    color: $c-dark-grey;
-  }
-  &--light {
-    color: $c-white;
-  }
-}
-
 .button {
   display: block;
   width: fit-content;
@@ -86,3 +38,66 @@
 }
 
 //----------------------------
+.h {
+  &-hero-title,
+  &-section-title,
+  &-subsection-title {
+    font-family: $font-family-bsd;
+    font-weight: 900;
+    letter-spacing: 0rem;
+    text-transform: uppercase;
+  }
+  &-hero-title {
+    font-size: 3.75rem;
+    line-height: 0.92;
+  }
+  &-section-title {
+    font-size: 3.125rem;
+    line-height: 0.9;
+  }
+  &-subsection-title {
+    font-size: 2rem;
+    line-height: 1;
+  }
+}
+.p {
+  &-section,
+  &-footer {
+    font-family: $font-family-outfit;
+    font-weight: 300;
+    letter-spacing: 0rem;
+  }
+  &-section {
+    line-height: 1.56;
+    font-size: 1.125rem;
+  }
+  &-footer {
+    font-size: 1rem;
+    line-height: 1.62;
+  }
+}
+.color {
+  &--light {
+    color: $c-white;
+  }
+  &--gold {
+    color: $c-gold;
+  }
+  &--grey{
+    color: $c-dark-grey;
+  }
+  &--dark {
+    color: $c-almost-black;
+  }  
+}
+.bg{
+  &--light{
+    background-color: $c-white;
+  }
+  &--gold{
+    background-color: $c-gold;
+  }
+  &--dark{
+    background-color: $c-almost-black;
+  }
+}

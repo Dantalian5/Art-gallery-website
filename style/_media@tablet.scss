@@ -19,19 +19,25 @@
       }
     }
   }
-  .section-1 {
-    &__row-1,
-    &__row-2,
-    &__row-3 {
-      gap: 0.6875rem;
-    }
-    &__row-2 {
-      margin-top: 0.6875rem;
-    }
+  .section-grid {
+    gap: 0.6875rem;
     &__column-small {
       max-width: 27.8125rem;
     }
-    &__info-1 {
+  }
+  .section-location{
+    padding-block: 5.5rem 5rem;
+    &__title{
+      max-width: min-content;
+    }
+    &__info{
+      max-width: 600px;
+      width: 600px;
+      
+    }
+  }
+  .section-info {
+    &--big {
       padding-right: 8%;
     }
   }
@@ -44,8 +50,8 @@
     }
   }
   //---------------
-  .heading {
-    &--hero {
+  .h {
+    &-hero-title {
       font-size: 4.375rem;
     }
   }
