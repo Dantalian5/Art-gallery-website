@@ -209,10 +209,10 @@ svg {
   width: fit-content;
   font-family: "Big Shoulders Display", cursive;
   font-weight: 800;
+  text-transform: uppercase;
   font-size: 1.25rem;
   line-height: 1.2;
   letter-spacing: 0.2273rem;
-  text-transform: uppercase;
   color: #ffffff;
   padding-block: 1.5rem;
   padding-inline: 2rem 2.1875rem;
