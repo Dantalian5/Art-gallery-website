@@ -9,8 +9,11 @@
   color: $c-white;
   padding-block: 1.5rem;
   padding-inline: 2rem 2.1875rem;
-  background: $c-almost-black;
   position: relative;
+  background: no-repeat linear-gradient(0deg, $c-gold 0%, $c-gold 100%),
+    $c-almost-black;
+  background-size: 0% 100%;
+  transition: background-size 0.7s;
   &::after {
     display: flex;
     align-items: center;
@@ -19,13 +22,17 @@
     width: 3.5rem;
     height: 100%;
     top: 0;
-    background: $c-gold;
+    background: no-repeat
+        linear-gradient(0deg, $c-almost-black 0%, $c-almost-black 100%),
+      $c-gold;
+    transition: background-size 0.5s 0.7s;
   }
   &--rigth {
     margin-right: 3.5rem;
     &::after {
       content: url(../assets/icon-arrow-right.svg);
       left: 100%;
+      background-size: 0% 100%;
     }
   }
   &--left {
@@ -33,6 +40,7 @@
     &::after {
       content: url(../assets/icon-arrow-left.svg);
       right: 100%;
+      background-size: 0% 100%;
     }
   }
 }
@@ -83,21 +91,21 @@
   &--gold {
     color: $c-gold;
   }
-  &--grey{
+  &--grey {
     color: $c-dark-grey;
   }
   &--dark {
     color: $c-almost-black;
-  }  
+  }
 }
-.bg{
-  &--light{
+.bg {
+  &--light {
     background-color: $c-white;
   }
-  &--gold{
+  &--gold {
     background-color: $c-gold;
   }
-  &--dark{
+  &--dark {
     background-color: $c-almost-black;
   }
 }
