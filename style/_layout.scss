@@ -119,8 +119,16 @@
 //------------------------------
 .section-map{
   width: 100%;
+  position: relative;
+  &__cta{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
 }
 #map{
   width: 100%;
   height: 600px;
+  z-index: 1;
 }

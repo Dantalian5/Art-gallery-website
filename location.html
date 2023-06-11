@@ -28,8 +28,8 @@
   </head>
   <body>
     <section class="section-map">
-      <div class="hero__info__cta">
-        <a class="button button--left" href="/location.html">Back to Home</a>
+      <div class="section-map__cta">
+        <a class="button button--left" href="/index.html">Back to Home</a>
       </div>
       <div id="map"></div>
     </section>
@@ -91,8 +91,12 @@
       crossorigin=""
     ></script>
     <script>
-      var map = L.map("map").setView([41.48041, -71.31098], 15);
-      
+      var map = L.map("map",{
+        center: [41.48041, -71.31098], 
+        zoom: 15,
+        scrollWheelZoom: false,
+        zoomControl: false,
+      }); 
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 20,
         attribution:
@@ -105,8 +109,7 @@
         //popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
       });
       var marker = L.marker([41.48041, -71.31098], { icon: myIcon }).addTo(map);
-      //L.zoomControl
-      var map = L.map.scrollWheelZoom(false);
+      L.control.zoom({ position: 'bottomleft' }).addTo(map);
     </script>
   </body>
 </html>
