@@ -198,6 +198,8 @@ svg {
 .footer__social__item {
   color: inherit;
   display: block;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .button {
